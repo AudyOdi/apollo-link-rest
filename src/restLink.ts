@@ -942,8 +942,8 @@ const resolver: Resolver = async (
   let body = undefined;
   let overrideHeaders: Headers = undefined;
   if (
-    -1 === ['GET', 'DELETE'].indexOf(method) &&
-    operationType === 'mutation'
+    -1 === ['GET', 'DELETE'].indexOf(method)
+    // operationType === 'mutation'
   ) {
     // Prepare our body!
     if (!bodyBuilder) {
